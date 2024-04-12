@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+
 import {
   bannerImgOne,
   bannerImgTwo,
@@ -12,7 +13,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
   <div
     style={{
       position: "relative",
-      backgroundColor: "#F5F5F3", // Gray background color
+      // backgroundColor: "#F5F5F3", // Gray background color
       display: "flex",
       justifyContent: "center",
       alignItems: "center", // Center vertically
@@ -28,7 +29,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         style={{
           marginBottom: "15px",
           fontSize: "2.5rem", // Adjust the font size as needed
-          color: "#000", // Black color
+          color: "#fff", // Black color
           fontWeight: "700",
         }}
       >
@@ -45,7 +46,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
       </p>
 
       <Link to="/about">
-        <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
+        <button className="bg-teal-400 shadow-md rounded-full text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
           {buttonText}
         </button>
       </Link>
@@ -178,7 +179,7 @@ const Banner = () => {
     // Add more slides as needed
   ];
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-teal-500 py-5 px-4">
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <CustomSlide key={index} {...slide} />

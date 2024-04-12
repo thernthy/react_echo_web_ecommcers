@@ -1,5 +1,10 @@
 import logo from "./orebiLogo.png";
 import logoLight from "./logoLight.png";
+import echoweb from "./echoweb.jpg"
+import security from "./35202650_shield.svg"
+import rerute_icon from "./return_11153370.png"
+import shipping_icon from "./shipping_12463257.png"
+import free_shopping_icon from "./shopping-cart_2331970.png"
 import bannerImgOne from "./banner/bannerImgOne.webp";
 import bannerImgTwo from "./banner/bannerImgTwo.webp";
 import bannerImgThree from "./banner/bannerImgThree.webp";
@@ -84,6 +89,12 @@ export {
   saleImgOne,
   saleImgTwo,
   saleImgThree,
+  //this echo web desing 
+  echoweb,
+  security,
+  rerute_icon,
+  shipping_icon,
+  free_shopping_icon,
   // ===================== Products start here ============
   // New Arrivals
   newArrOne,
