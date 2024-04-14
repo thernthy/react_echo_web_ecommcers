@@ -31,8 +31,8 @@ const ProductBanner = ({ itemsPerPageFromBanner }) => {
         <span
           className={`${
             girdViewActive
-              ? "bg-primeColor text-white"
-              : "border-[1px] border-gray-300 text-[#737373]"
+              ? "bg-teal-500 text-white"
+              : "border-[1px] border-teal-300 text-teal-400"
           } w-8 h-8 text-lg flex items-center justify-center cursor-pointer gridView`}
         >
           <BsGridFill />
@@ -40,8 +40,8 @@ const ProductBanner = ({ itemsPerPageFromBanner }) => {
         <span
           className={`${
             listViewActive
-              ? "bg-primeColor text-white"
-              : "border-[1px] border-gray-300 text-[#737373]"
+              ? "bg-teal-500 text-white"
+              : "border-[1px] border-teal-300 text-teal-400"
           } w-8 h-8 text-base flex items-center justify-center cursor-pointer listView`}
         >
           <ImList />
@@ -54,12 +54,12 @@ const ProductBanner = ({ itemsPerPageFromBanner }) => {
                             Right Part STart here
         ======================================================== */}
       <div className="flex items-center gap-2 md:gap-6 mt-4 md:mt-0">
-        <div className="flex items-center gap-2 text-base text-[#767676] relative">
+        <div className="flex items-center gap-2 text-base text-teal-400 relative">
           <label className="block">Sort by:</label>
           <select
             // onChange={(e) => setSelected(e.target.value)}
             id="countries"
-            className="w-32 md:w-52 border-[1px] border-gray-200 py-1 px-4 cursor-pointer text-primeColor text-base block dark:placeholder-gray-400 appearance-none focus-within:outline-none focus-visible:border-primeColor"
+            className="w-32 md:w-52 rounded-md border-[1px] border-gray-200 py-1 px-4 cursor-pointer bg-teal-500 text-primeColor text-base block dark:placeholder-teal-500 appearance-none focus-within:outline-none focus-visible:border-primeColor"
           >
             <option value="Best Sellers">Best Sellers</option>
             <option value="New Arrival">New Arrival</option>
@@ -75,7 +75,7 @@ const ProductBanner = ({ itemsPerPageFromBanner }) => {
           <select
             onChange={(e) => itemsPerPageFromBanner(+e.target.value)}
             id="countries"
-            className="w-16 md:w-20 border-[1px] border-gray-200 py-1 px-4 cursor-pointer text-primeColor text-base block dark:placeholder-gray-400 appearance-none focus-within:outline-none focus-visible:border-primeColor"
+            className="w-16 md:w-20 border-[1px] border-gray-200 py-1 px-4 cursor-pointer bg-teal-500 rounded-md text-primeColor text-base block dark:placeholder-gray-400 appearance-none focus-within:outline-none focus-visible:border-primeColor"
           >
             <option value="12">12</option>
             <option value="24">24</option>

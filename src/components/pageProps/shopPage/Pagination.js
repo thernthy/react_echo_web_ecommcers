@@ -80,13 +80,13 @@ const Pagination = ({ itemsPerPage }) => {
           marginPagesDisplayed={2}
           pageCount={pageCount}
           previousLabel=""
-          pageLinkClassName="w-9 h-9 border-[1px] border-lightColor hover:border-gray-500 duration-300 flex justify-center items-center"
+          pageLinkClassName="w-9 h-9 border-[1px] border-lightColor hover:border-teal-500 duration-300 flex justify-center items-center"
           pageClassName="mr-6"
           containerClassName="flex text-base font-semibold font-titleFont py-10"
-          activeClassName="bg-black text-white"
+          activeClassName="bg-teal-400 text-white"
         />
 
-        <p className="text-base font-normal text-lightText">
+        <p className=" font-normal text-teal-400">
           Products from {itemStart} to {Math.min(endOffset, items.length)} of{" "}
           {items.length}
         </p>

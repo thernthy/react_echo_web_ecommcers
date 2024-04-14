@@ -72,9 +72,9 @@ const ProductDetails = () => {
                 key={tab.id}
                 className={`${
                   activeTab === tab.id
-                    ? "bg-blue-500 text-white"
+                    ? "bg-teal-500 text-white"
                     : "bg-gray-200 text-gray-800"
-                } py-2 px-4  focus:outline-none`}
+                } py-2 px-4  focus:outline-none rounded-full`}
                 onClick={() => handleTabClick(tab.id)}
               >
                 {tab.label}

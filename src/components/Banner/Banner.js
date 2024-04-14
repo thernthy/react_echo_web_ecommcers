@@ -39,7 +39,7 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         style={{
           marginBottom: "25px",
           fontSize: "1.5rem", // Adjust the font size as needed
-          color: "#666", // Gray color
+          color: "#fff", // Gray color
         }}
       >
         {Subtext}
@@ -71,15 +71,8 @@ const Banner = () => {
       setDocActive(next);
     },
     appendDots: (dots) => (
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "7%",
-          transform: "translateY(-50%)",
-        }}
-      >
-        <ul style={{ margin: "0px" }}> {dots} </ul>
+      <div>
+        <ul style={{ margin: "0px", display:"flex"}}> {dots} </ul>
       </div>
     ),
     customPaging: (i) => (
@@ -87,14 +80,26 @@ const Banner = () => {
         style={
           i === dotActive
             ? {
-                width: "30px",
-                color: "#262626",
-                borderRight: "3px #262626 solid",
+                width: "40px",
+                height: "30px",
+                display:"flex",
+                flexDirection: "column",
+                justifyContent:"center",
+                alignItems:"center",
+                borderRadius: "50%",
+                color: "#fff",
+                borderRight: "3px rgb(110 231 183) solid",
                 padding: "8px 0",
                 cursor: "pointer",
               }
             : {
-                width: "30px",
+                width: "40px",
+                height: "30px",
+                display:"flex",
+                flexDirection: "column",
+                justifyContent:"center",
+                alignItems:"center",
+                borderRadius: "50%",
                 color: "transparent",
                 borderRight: "3px white solid",
                 padding: "8px 0",

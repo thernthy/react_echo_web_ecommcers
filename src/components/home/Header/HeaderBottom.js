@@ -40,7 +40,7 @@ const HeaderBottom = () => {
   }, [searchQuery]);
 
   return (
-    <div className="w-full  relative">
+    <div className="w-full bg-teal-500  relative">
       <div className="max-w-container mx-auto">
         <Flex className="flex flex-col lg:flex-row items-start lg:items-center justify-between w-full px-4 pb-4 lg:pb-0 h-full lg:h-24">
           <div
@@ -49,7 +49,7 @@ const HeaderBottom = () => {
             className="flex h-14 cursor-pointer items-center gap-2 text-primeColor"
           >
             <HiOutlineMenuAlt4 className="w-5 h-5 text-teal-500" />
-            <p className="text-[14px] font-normal">Shop by Category</p>
+            <p className="text-[14px] font-normal text-white underline">Shop by Category</p>
 
             {show && (
               <motion.ul
@@ -82,14 +82,14 @@ const HeaderBottom = () => {
               </motion.ul>
             )}
           </div>
-          <div className="relative w-full lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl">
+          <div className="relative w-full border border-space-2 borderd-teal-400 border-t-0 lg:w-[600px] h-[50px] text-base text-primeColor flex items-center gap-2 justify-between px-6 rounded-xl">
             <input
-              className="flex-1 h-full outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px]"
+              className="flex-1 h-full outline-none bg-transparent placeholder:text-[#C4C4C4] placeholder:text-[14px]"
               type="text"
               onChange={handleSearch}
               value={searchQuery}
               placeholder="Search your products here"
-              style={{borderBottom: "3px solid", borderColor: "rgb(45 212 191)"}}
+              // style={{borderBottom: "3px solid", borderColor: "rgb(45 212 191)"}}
             />
             <FaSearch className="w-5 h-5 text-teal-400" />
             {searchQuery && (
@@ -139,7 +139,7 @@ const HeaderBottom = () => {
               </div>
             )}
           </div>
-          <div className="flex gap-4 mt-2 lg:mt-0 items-center text-teal-400 pr-6 cursor-pointer relative">
+          <div className="flex gap-4 mt-2 lg:mt-0 items-center text-white pr-6 cursor-pointer relative">
             <div onClick={() => setShowUser(!showUser)} className="flex">
               <FaUser  />
               <FaCaretDown />

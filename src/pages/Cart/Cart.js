@@ -30,11 +30,11 @@ const Cart = () => {
     }
   }, [totalAmt]);
   return (
-    <div className="max-w-container mx-auto px-4">
+    <div className="max-w-container mx-auto px-5 ">
       <Breadcrumbs title="Cart" />
       {products.length > 0 ? (
         <div className="pb-20">
-          <div className="w-full h-20 bg-[#F5F7F7] text-primeColor hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold">
+          <div className="w-full h-20 border-[1px] border-teal-400 border-t-0  text-primeColor hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold">
             <h2 className="col-span-2">Product</h2>
             <h2>Price</h2>
             <h2>Quantity</h2>
@@ -50,7 +50,7 @@ const Cart = () => {
 
           <button
             onClick={() => dispatch(resetCart())}
-            className="py-2 px-10 bg-red-500 text-white font-semibold uppercase mb-4 hover:bg-red-700 duration-300"
+            className="py-2 px-10 bg-red-500 text-white  rounded-md font-semibold uppercase mb-4 hover:bg-red-700 duration-300"
           >
             Reset cart
           </button>
@@ -72,19 +72,19 @@ const Cart = () => {
             <div className="w-96 flex flex-col gap-4">
               <h1 className="text-2xl font-semibold text-right">Cart totals</h1>
               <div>
-                <p className="flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium">
+                <p className="flex items-center justify-between border-[1px] border-teal-400 border-b-0 py-1.5 text-lg px-4 font-medium">
                   Subtotal
                   <span className="font-semibold tracking-wide font-titleFont">
                     ${totalAmt}
                   </span>
                 </p>
-                <p className="flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium">
+                <p className="flex items-center justify-between border-[1px] border-teal-400 border-b-0 py-1.5 text-lg px-4 font-medium">
                   Shipping Charge
                   <span className="font-semibold tracking-wide font-titleFont">
                     ${shippingCharge}
                   </span>
                 </p>
-                <p className="flex items-center justify-between border-[1px] border-gray-400 py-1.5 text-lg px-4 font-medium">
+                <p className="flex items-center justify-between border-[1px] border-teal-400 py-1.5 text-lg px-4 font-medium">
                   Total
                   <span className="font-bold tracking-wide text-lg font-titleFont">
                     ${totalAmt + shippingCharge}
@@ -93,7 +93,7 @@ const Cart = () => {
               </div>
               <div className="flex justify-end">
                 <Link to="/paymentgateway">
-                  <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">
+                  <button className="w-52 h-10 bg-teal-500 rounded-md text-white hover:bg-black duration-300">
                     Proceed to Checkout
                   </button>
                 </Link>

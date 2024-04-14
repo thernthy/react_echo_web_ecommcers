@@ -105,7 +105,7 @@ const ProductInfo = ({ productInfo }) => {
             })
           )
         }
-        className="w-full py-4 bg-blue-500 hover:bg-blue-600 duration-300 text-white text-lg font-titleFont"
+        className="w-full py-4 bg-teal-500 rounded-md hover:bg-white hover:text-black duration-300 text-white text-lg font-titleFont"
       >
         Add to Cart
       </button>
