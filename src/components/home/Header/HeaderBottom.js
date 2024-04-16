@@ -82,7 +82,7 @@ const HeaderBottom = () => {
               </motion.ul>
             )}
           </div>
-          <div className="relative w-full border border-space-2 borderd-teal-400 border-t-0 lg:w-[600px] h-[50px] text-base text-primeColor flex items-center gap-2 justify-between px-6 rounded-xl">
+          <div className="relative w-full border border-space-2 borderd-teal-400 border-t-0 border-l-0 border-r-0 lg:w-[600px] h-[50px] text-base text-primeColor flex items-center gap-2 justify-between px-6 rounded-xl">
             <input
               className="flex-1 h-full outline-none bg-transparent placeholder:text-[#C4C4C4] placeholder:text-[14px]"
               type="text"
